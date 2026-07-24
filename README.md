@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Phone Shop — PHP/MySQL E-Commerce Project
 
 A simple phone e-commerce site with customer storefront + admin panel,
@@ -50,3 +51,7 @@ built with PHP (PDO), MySQL, HTML, CSS, and vanilla JavaScript.
 
 4. **Create required folders**
    These must exist and be writable by PHP:
+=======
+# Phone_shop
+internship-project
+>>>>>>> 49b3db7d0104ab9b7391e7998492ac66ecd0edda
