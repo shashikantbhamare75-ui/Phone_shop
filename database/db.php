@@ -1,0 +1,26 @@
+<?php
+// database/db.php
+// Central PDO database connection for the whole project
+
+$host = "localhost";
+$dbname = "phone_shop";
+$dbuser = "root";
+$dbpass = "";
+
+try {
+    $pdo = new PDO(
+        "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
+        $dbuser,
+        $dbpass,
+        [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES => false,
+        ]
+    );
+} catch (PDOException $e) {
+    // In production, log this instead of echoing it to the browser
+    die("Database connection failed: " . $e->getMessage());
+}
+?>
+<?php password_hash("admin123", PASSWORD_DEFAULT); ?>

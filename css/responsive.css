@@ -1,0 +1,148 @@
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .search {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search input {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .menu ul.active {
+    display: flex;
+  }
+
+  .menu ul li a {
+    font-size: 20px;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .icon button {
+    padding: 10px 20px;
+  }
+
+  /* Home banner */
+  .image img {
+    height: 250px;
+  }
+
+  .container h1 {
+    font-size: 40px;
+  }
+
+  .container p {
+    font-size: 18px;
+  }
+
+  /* Product banner */
+  .product-banner h1 {
+    font-size: 36px;
+  }
+
+  .product-banner p {
+    font-size: 18px;
+  }
+
+  /* Product grid */
+  .products {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Offer banner */
+  .offer {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  .offer h2 {
+    font-size: 24px;
+  }
+
+  .offer p {
+    font-size: 16px;
+  }
+
+  /* Reviews */
+  .review-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Generic form section (contact/checkout/profile) */
+  section {
+    width: 90%;
+  }
+
+  /* Admin sidebar collapses on mobile */
+  .admin-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .admin-layout {
+    flex-direction: column;
+  }
+}
+.toggle-review{
+    border:none;
+    background:none;
+    color:#007bff;
+    cursor:pointer;
+    font-weight:bold;
+    margin-left:5px;
+}
+
+.toggle-review:hover{
+    text-decoration:underline;
+}
+
